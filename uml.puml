@@ -1,0 +1,27 @@
+@startuml UML
+
+[index.html] ..> [index.js] : use
+[index.js] ..> [App.js] : use
+[App.js] ..> [NavMenu.jsx] : use
+[App.js] ..> [Login.jsx] : use
+[NavMenu.jsx] ..> [AbsenteeismTeacherPage.jsx] : use
+[AbsenteeismTeacherPage.jsx] ..> [AbsenteeismContainer.jsx] : use
+[AbsenteeismContainer.jsx] ..> [AbsenteeismSubject.jsx] : use
+[AbsenteeismSubject.jsx] ..> [StudentAbsenteeism.jsx] : use
+[NavMenu.jsx] ..> [JournalStudentPage.jsx] : use
+[JournalStudentPage.jsx] ..> [StudentMarks.jsx] : use
+[StudentMarks.jsx] ..> [Mark.jsx] : use
+[NavMenu.jsx] ..> [JournalTeacherPage.jsx] : use
+[JournalTeacherPage.jsx] ..> [GroupContainer.jsx] : use
+[GroupContainer.jsx] ..> [SubjectContainer.jsx] : use
+[SubjectContainer.jsx] ..> [StudentsContainer.jsx] : use
+[NavMenu.jsx] ..> [HometaskStudentPage.jsx] : use
+[HometaskStudentPage.jsx] ..> [HomeTask.jsx] : use
+[NavMenu.jsx] ..> [AbsenteeismStudentPage.jsx] : use
+[AbsenteeismStudentPage.jsx] ..> [Absence.jsx] : use
+[NavMenu.jsx] ..> [TimeTableStudentPage.jsx] : use
+[NavMenu.jsx] ..> [AdminPag.jsx] : use
+
+
+
+@enduml
